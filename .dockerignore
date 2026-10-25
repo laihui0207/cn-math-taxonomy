@@ -1,0 +1,19 @@
+# 白名单：构建上下文只放站点需要的文件，与 scripts/deploy-cf.sh 打包的内容一致。
+# 截图、文档、脚本、出题批次（data/_qbatches、data/_second_pass 等）都不进镜像。
+*
+!docker/nginx.conf
+!index.html
+!.nojekyll
+!sw.js
+!manifest.webmanifest
+!assets
+!explore
+!diagnose
+!children
+!data/topics.json
+!data/dependencies.json
+!data/cn-curriculum-standards.json
+!data/questions.json
+!data/id-aliases.json
+diagnose/README.md
+**/.DS_Store
